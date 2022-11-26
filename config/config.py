@@ -7,31 +7,31 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "15443180"))
+API_HASH = getenv("API_HASH", "7cd4725247752f02ad24e8c89a70b3a0")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5734531558:AAFS0l5wF65myq8Xqh56GzjbHQa2A7GmIFI")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://bsdk:betichod@cluster0.fgj1r9z.mongodb.net/?retryWrites=true&w=majority")
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝙍𝙖𝙣𝙞 ✘ 𝙈𝙪𝙨𝙞𝙘 [❤️]")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheAnonymous2005/AnonXMusic")
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VENOM95823358158/VenomXMusic")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "5564090687")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DevilsHeavenMF")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/OGVENOMEDITZ")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/OG_FAMILY_GROUP")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "180"))
-SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "240"))
+SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "240"))
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -58,8 +58,8 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
+STRING1 = getenv("STRING_SESSION", "AQAr1Njx8ov8UZ9lu00qMfBro_N06Q7BmPX8c8WludvM3rzcS6gDgcFt9x6hF-iX0Sjnyi5D8rbgA1gVhrS7qrAdEGXZN6yl9god5Awd5XA77ipateVGjOsHXioS4fthUuqh7cyOttrVFc4H9iSydMzzxlAh-fe9VWG2emcniGZeod4hWy_n-zduyZdLmb13eTXsqoRCEz772ZEWCRMIaNT0yaegGvfNO0DRXoQO1_NfAdIh5e3EjdDaM0VQKPwxp2nTh-39N9XXcs_75gK_oZFbjNOW12KfSKf7QcqsRu3vqrBiHzsiFd8hdIiBsiV-W0Vf1_cFV__UA7pSTULwRt1QAAAAAVk_JQAA")
+STRING2 = getenv("STRING_SESSION2", "AQAWvYWe--41Z5pKpHYAmYTn0tEW8jWTpyxQRuZVYsiVAGLn7B_xvF8d6E5EvPXeQMPuXRl9CilhaWeqfMcsfLgufLHLur_wy_gugvowuBuqsdt6P8SuZ8BV6FlW0UbUKAGvATDGmIPyLp4cqfCwkGqWI5CeNq93mXsOJh9Q2YC0NHpjrg5bD8olGo4dROsv1BoBInqBXRKBniHsBERCgkFqwr98P6Eg0UubC9IvHrL01UgdapUF0X3U4sSo_S1C53X-NpTaSRRnnyraFP1PBAWgzM2Hm7FrU2ai4QMNED84KVaFDWZbYV9HylljlqEYTaqu01zdBuWe_I_6tZLrKY81AAAAAVber38A")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/56d1760224589ee370186.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/6d4e8e492ae6895826524.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/6c1fb04031bf2238e1f56.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
